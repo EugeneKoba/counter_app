@@ -2,17 +2,34 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <!-- Importing 'Open Sans' Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
-    <title>BlackJack</title>
+    <title>Counter</title>
   </head>
   <body>
     <section id="main">
-      <div id="number-el">
-        <h1>0</h1>
+      <div id="title-el">
+        <h5>Counter App</h5>
       </div>
-      <div id="counter-el">
-        <div id="increment-btn">+</div>
-        <div id="decrement-btn">-</div>
+      <div id="number-el">
+        <h1>1</h1>
+      </div>
+      <div id="container">
+        <button id="increment-btn">
+          <img src="images/minus_icon.png" alt="minus_sign" height="100px" />
+        </button>
+        <button id="refresh-btn">
+          <img src="images/refresh_icon.png" alt="refresh_sign" height="40px" />
+        </button>
+        <button id="decrement-btn">
+          <img src="images/plus_icon.png" alt="plus_sign" height="100px" />
+        </button>
       </div>
     </section>
 
