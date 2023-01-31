@@ -8,12 +8,12 @@ body {
 #number-el {
     width: 100%;
     height: 150px;
-    display: flex;
+    display: flex; /* So that the Number Element can be positioned in the middle */
     justify-content: center;
     text-align: center;
 }
 
- #number-el h1 { /* Styling of the Number Counter */
+div h1 { /* Styling of the Number Counter */
     font-size: 108px;
     font-weight: 300;
     margin: 0%;
@@ -24,7 +24,7 @@ body {
 
 #title-el h5 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 600; /* Making the "Counter App" title Bold */
     margin: 0%;
     padding: 20px 0;
     justify-content: center;
@@ -32,7 +32,7 @@ body {
 }
 
 #container { /* Container with plus & minus buttons */
-    min-width: 100vw;
+    min-width: 100vw; /* So that the container spans the whole page */
     height: 150px;
     display: flex;
     justify-content: center;
@@ -41,14 +41,22 @@ body {
 
 #container button {
     background-color: transparent;
-    border-width: 1px;
+    border-width: 3px;
     border-color: white;
     padding: 5px;
     margin: 10px;
 }
 
 #container #increment-btn, #container #decrement-btn {
-    border-radius: 100%;
+    border-radius: 100%; /* To make the - and + buttons circular */
+}
+
+#container button {
+    transition: all 0.1s ease; /* Mini transition when hovering mouse over each button */
+}
+
+#container button:hover {
+    transform: scale(1.1, 1.1); /* Hover Pseudo-class to increase size of buttons by 10% */
 }
 
 
